@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Rajdhani", sans-serif;
+}
+.homeWrapper {
+  max-width: 100vw;
+  padding: 10px 64px;
+}
+@media (max-width: 480px) {
+  .homeWrapper {
+    padding: 10px 16px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .homeWrapper {
+    padding: 10px 32px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .homeWrapper {
+    padding: 10px 32px;
+  }
+}

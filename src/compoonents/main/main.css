@@ -1,0 +1,55 @@
+.mainWrapper {
+  height: calc(100vh - 40px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.mainTextContainer {
+  font-size: 96px;
+  z-index: 3;
+}
+
+.mainCursor {
+  position: fixed;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+  left: -100%;
+  top: 50%;
+  border: 2px solid white;
+  height: 300px;
+  width: 300px;
+  z-index: 0;
+  transition: all 300ms ease-out;
+}
+.eMail {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.eMail span {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .mainTextContainer {
+    font-size: 40px;
+  }
+  .eMail {
+    left: 0px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .mainTextContainer {
+    font-size: 48px;
+  }
+  .eMail {
+    left: 0px;
+  }
+}
